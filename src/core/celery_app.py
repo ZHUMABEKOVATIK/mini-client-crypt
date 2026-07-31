@@ -6,7 +6,7 @@ celery_app = Celery(
     "deribit_tracker",
     broker=settings.CELERY_BROKER_URL,
     backend=settings.CELERY_RESULT_BACKEND,
-    include=["app.tasks.fetch_prices"],
+    include=["src.tasks.fetch_prices"],
 )
 
 celery_app.conf.beat_schedule = {
