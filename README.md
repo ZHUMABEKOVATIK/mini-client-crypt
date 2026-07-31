@@ -37,7 +37,7 @@ API будет доступно на `http://localhost:8000`, документа
 |---|---|---|---|
 | GET | `/api/price?ticker=btc_usd` | Все сохранённые данные по тикеру | `ticker` |
 | GET | `/api/price/latest?ticker=btc_usd` | Последняя цена по тикеру | `ticker` |
-| GET | `/api/price/history?ticker=btc_usd&date_from=...&date_to=...` | Цены с фильтром по дате | `ticker``date_from``date_to` |
+| GET | `/api/price/history?ticker=btc_usd&date_from=...&date_to=...` | Цены с фильтром по дате | `ticker`, `date_from`, `date_to` |
 
 ## Тесты
 
